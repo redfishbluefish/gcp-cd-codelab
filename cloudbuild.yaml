@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/redfishbluefish/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/redfishbluefish/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/spinnaker-to-gcp-hello-world/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/castanet-spinnaker-test/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/spinnaker-to-gcp-hello-world/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/castanet-spinnaker-test/gcp-cd-codelab:$REVISION_ID"
